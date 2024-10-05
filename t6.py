@@ -66,7 +66,7 @@ cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 def get_models():
     return [
         
-        CatBoostClassifier(iterations=50, random_seed=23, verbose=0),
+        CatBoostClassifier(iterations=100, random_seed=23, verbose=0),
         # xgb(n_estimators=100,  learning_rate=0.1, random_state=42, verbosity=0),
     ]
 
